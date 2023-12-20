@@ -15,7 +15,6 @@ The images below showcase the effectiveness of the LRQA model in image denoising
 
 ![image](https://github.com/egor-ciu/lrqa-nla-project/assets/120116723/b8c1d2db-9032-4305-86a2-35c2feffa307)
 Color image denoising results on “Baboon”. (a) Original image; (b) Noisy image corrupted by Gaussian noise with variance 𝜏=50, respectively; The denoised image reconstructed by: (c) LSCD [52], (g) QLRMA-1
-<img width="638" alt="image" src="https://github.com/egor-ciu/lrqa-nla-project/assets/120116723/44e94cce-7724-4839-a39e-f74ee2c258b1">
 
 ![image](https://github.com/egor-ciu/lrqa-nla-project/assets/120116723/f3b99c1c-5a2f-4144-b1c4-9af1b540851f)
 Color image denoising results on “Monarch”. (a) Original image; (b) Noisy image corrupted by Gaussian noise with variance 𝜏=50; The denoised image reconstructed by: (c) LSCD [52], (d) QLRMA-1
