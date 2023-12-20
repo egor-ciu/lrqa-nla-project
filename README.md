@@ -1,8 +1,5 @@
 # Low-Rank Quaternion Approximation for Color Image Processing
 
-## Abstract
-Low-rank matrix approximation (LRMA)-based methods have been highly successful for grayscale image processing. For color images, LRMA typically restores each color channel independently using the monochromatic model or processes the concatenation of three color channels using the concatenation model. However, these approaches might not fully exploit the high correlation among RGB channels. To overcome this, we introduce a novel low-rank quaternion approximation (LRQA) model. This model encodes a color image pixel as a pure quaternion matrix, rather than a scalar, to better leverage the inter-channel correlations. Additionally, LRQA imposes a low-rank constraint on the constructed quaternion matrix.
-
 ## Overview
 This repository contains the implementation of the LRQA model for color image denoising. The model's effectiveness is demonstrated through improved performance image processing tasks, as compared to traditional least-squares complex decomposition(LSCD) method.
 
