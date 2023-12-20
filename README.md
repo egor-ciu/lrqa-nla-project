@@ -23,10 +23,10 @@ Run the function CBM3D in CDM3D.m
 
 FUNCTION INTERFACE:
 
- [PSNR, yRGB_est] = CBM3D(yRGB, zRGB, sigma, profile, print_to_screen, colorspace)
+     [PSNR, yRGB_est] = CBM3D(yRGB, zRGB, sigma, profile, print_to_screen, colorspace)
 
- ! The function can work without any of the input arguments, 
-  in which case, the internal default ones are used !
+     ! The function can work without any of the input arguments, 
+     in which case, the internal default ones are used !
 
  BASIC USAGE EXAMPLES:
 
@@ -63,20 +63,22 @@ FUNCTION INTERFACE:
 
 
  INPUT ARGUMENTS (OPTIONAL):
-    1) yRGB (M x N x 3): Noise-free RGB image (needed for computing PSNR),
+ 
+     1) yRGB (M x N x 3): Noise-free RGB image (needed for computing PSNR),
                           replace with the scalar 1 if not available.
-    2) zRGB (M x N x 3): Noisy RGBimage (intensities in range [0,1] or [0,255])
-    3) sigma (double)  : Std. dev. of the noise (corresponding to intensities
+     2) zRGB (M x N x 3): Noisy RGBimage (intensities in range [0,1] or [0,255])
+     3) sigma (double)  : Std. dev. of the noise (corresponding to intensities
                            in range [0,255] even if the range of zRGB is [0,1])
-    4) profile (char)  : 'np' --> Normal Profile 
+     4) profile (char)  : 'np' --> Normal Profile 
                          'lc' --> Fast Profile
-    5) print_to_screen : 0 --> do not print output information (and do 
+     5) print_to_screen : 0 --> do not print output information (and do 
                                not plot figures)
                          1 --> print information and plot figures
-    6) colorspace (char): 'opp'   --> use opponent colorspace
+     6) colorspace (char): 'opp'   --> use opponent colorspace
                          'yCbCr' --> use yCbCr colorspace
 
  OUTPUTS:
-    1) PSNR (double)          : Output PSNR (dB), only if the original 
+ 
+     1) PSNR (double)          : Output PSNR (dB), only if the original 
                                 image is available, otherwise PSNR = 0                                               
-    2) yRGB_est (M x N x 3): Final RGB estimate (in the range [0,1])
+     2) yRGB_est (M x N x 3): Final RGB estimate (in the range [0,1])
