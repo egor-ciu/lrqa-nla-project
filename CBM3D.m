@@ -3,11 +3,6 @@ function [PSNR, yRGB_est] = CBM3D(yRGB, zRGB, sigma, profile, print_to_screen, c
 %  CBM3D is algorithm for attenuation of additive white Gaussian noise from 
 %  color RGB images. This algorithm reproduces the results from the article:
 %
-%  [1] K. Dabov, A. Foi, V. Katkovnik, and K. Egiazarian, "Color image
-%   denoising via sparse 3D collaborative filtering with grouping constraint in 
-%   luminance-chrominance space," submitted to IEEE Int. Conf. Image Process., 
-%   January 2007, in review, preprint at http://www.cs.tut.fi/~foi/GCF-BM3D.
-%
 %  FUNCTION INTERFACE:
 %
 %  [PSNR, yRGB_est] = CBM3D(yRGB, zRGB, sigma, profile, print_to_screen, colorspace)
@@ -68,15 +63,6 @@ function [PSNR, yRGB_est] = CBM3D(yRGB, zRGB, sigma, profile, print_to_screen, c
 %                                 image is available, otherwise PSNR = 0                                               
 %     2) yRGB_est (M x N x 3): Final RGB estimate (in the range [0,1])
 %
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Copyright (c) 2007-2011 Tampere University of Technology.
-% All rights reserved.
-% This work should only be used for nonprofit purposes.
-%
-% AUTHORS:
-%     Kostadin Dabov, email: dabov _at_ cs.tut.fi
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
